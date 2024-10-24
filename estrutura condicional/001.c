@@ -18,3 +18,4 @@ int main(){
 		printf("Os dois números anteriores são iguais.");
 	}
 }
+
