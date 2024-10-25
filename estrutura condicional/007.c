@@ -6,6 +6,8 @@ int main(){
 	
 	int n1, n2, n3, media;
 	
+	n3 = n3 * n3;
+	
 	printf("Qual foi a nota da sua primeira prova?\n");
 	scanf("%d", &n1);
 		printf("Qual foi a nota da sua segunda prova?\n");
