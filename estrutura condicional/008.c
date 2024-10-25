@@ -15,13 +15,15 @@ int main(){
 	
 	media = n1 + n2 + n3 / 3;
 	
-	if (media >= 60){
-		printf("Sua média foi:  %d\n", media);
-		printf("Aprovado.");
-	} else if(media < 60){
+	if (media <= 2.9){
 		printf("Sua média foi:  %d\n", media);
 		printf("Reprovado.");
-	}
-	
+	} else if(media <= 4.9){
+		printf("Sua média foi:  %d\n", media);
+		printf("Recuperação.");
+	} else if(media >= 5){
+		printf("Sua média foi:  %d\n", media);
+		printf("Aprovado.");
+}
 	return 0;
 }
