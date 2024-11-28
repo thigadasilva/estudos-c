@@ -1,28 +1,17 @@
 #include <stdio.h>
 #include <locale.h>
 
-int soma(int num){
-	int i;
-	if (num <= 0){
-		return 0;
-	} else{
-		return num + soma(num - 1);
-	}
-}
-
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
-	int num;
+	int vetor[6] = {1, 0, 5, -2, -5, 7}; 
+	int soma = 0;
+	soma = vetor[0] + vetor[1] + vetor[5];
 	
-	printf("Insira um número para o cálculo:\n");
-	scanf("%d", &num);
+	vetor[3] = 100;
 	
-	if (num < 0){
-		printf("Número inválido.");
-	} else {
-	printf("O somatório dos números é %d", soma(num));
-}
+	printf("VETOR:\n %d\n %d\n %d\n %d\n %d\n %d\n A soma dos vetores 0, 1 e 5 é:%d", vetor[0], vetor[1], vetor[2], vetor[3], vetor[4], vetor[5], vetor[6], soma);
+	
 	return 0;
 	
 }
